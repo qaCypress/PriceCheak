@@ -1,0 +1,55 @@
+{
+  "manifest_version": 3,
+  "name": "PriceCheсk",
+  "version": "1.1",
+  "description": "This extension enhances web application functionality by providing tools for managing and analyzing data related to online campaigns and currency conversion. It offers a comprehensive set of features aimed at marketers, analysts, and campaign managers.",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "storage",
+    "scripting",
+    "webNavigation",
+    "history",
+    "webRequest",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "scripts/background.js"
+  },
+  
+  "host_permissions": [
+    "https://www.oanda.com/currency-converter/*"
+  ],
+ 
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "percent.png",
+      "48": "percent.png",
+      "128": "percent.png"
+    }
+  },
+  "icons": {
+    "16": "percent.png",
+    "48": "percent.png",
+    "128": "percent.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["scripts/content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "scripts/content.js",
+        "scripts/front-function.js",
+        "scripts/math-function.js",
+        "scripts/send-reqrest-function.js",
+        "scripts/background.js"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

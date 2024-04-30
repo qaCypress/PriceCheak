@@ -1,0 +1,191 @@
+body{
+    overflow: visible !important;
+}
+
+.extension-container {
+    /* Adding styles for the extension container */
+    width: 370px; /* Width of the container, 90% of parent element */
+    height: 50px; /* Height of the container */
+    margin: 20px auto; /* Center aligning the container */
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.project-dropdown {
+    /* Styles for the project dropdown */
+    width: 100%; /* Explicit width for the dropdown */
+    font-size: 16px; /* Font size */
+    border: 2px solid #ccc; /* Dropdown border */
+    border-radius: 5px; /* Border radius */
+    background-color: #f9f9f9; /* Dropdown background */
+    appearance: none; /* Removing default dropdown arrow */
+    cursor: pointer; /* Cursor on hover */
+    text-align: center; /* Text alignment */
+    margin: auto; /* Center alignment */
+    padding: 10px; /* Padding around dropdown */
+    box-sizing: border-box; /* Including padding and border in total width */
+    margin-bottom: 10px;
+}
+
+/* Styles for options in the project dropdown */
+.project-dropdown option {
+    padding: 10px; /* Padding around dropdown options */
+    background-color: #fff; /* Background color */
+    color: #333; /* Text color */
+    border-bottom: 1px solid #ddd; /* Horizontal line between options */
+}
+
+.project-dropdown option:last-child {
+    border-bottom: none; /* Removing horizontal line after last option */
+}
+
+.project-dropdown:hover,
+.project-dropdown:focus {
+    border-color: #666; /* Changing border color on hover or focus */
+}
+
+.button-container {
+    /* Grid layout for button container */
+    display: grid;
+    grid-template-columns: repeat(6, auto); /* 6 columns */
+    gap: 5px; /* Spacing between buttons */
+    width: 100%; /* Full width */
+    margin-bottom: 10px;
+}
+
+.button {
+    /* Styles for buttons */
+    width: 100%; /* Full width */
+    height: 30px; /* Height */
+    padding: 2.5px; /* Padding */
+    background-color: #f9f9f9; /* Background color */
+    border: 2px solid #ccc; /* Button border */
+    border-radius: 5px; /* Border radius */
+    font-size: 12px; /* Font size */
+    color: #333; /* Text color */
+    cursor: pointer; /* Cursor on hover */
+    text-align: center; /* Text alignment */
+    box-sizing: border-box; /* Including padding and border in total width */
+}
+
+.button:active {
+    background-color: #7a7a7a9c; /* Button background color on click */
+}
+
+#input-field {
+    /* Styles for input field */
+    width: 100%; /* Full width */
+    height: 30px; /* Height */
+    padding: 2.5px; /* Padding */
+    background-color: #f9f9f9; /* Background color */
+    border: 2px solid #ccc; /* Input border */
+    border-radius: 5px; /* Border radius */
+    font-size: 12px; /* Font size */
+    color: #333; /* Text color */
+    text-align: center; /* Text alignment */
+    box-sizing: border-box; /* Including padding and border in total width */
+    margin-bottom: 10px; /* Bottom margin */
+}
+
+table {
+    /* Table styles */
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    /* Table header and data cell styles */
+    border: 2px solid #ccc;
+    padding: 8px;
+    text-align: left;
+    width: auto;
+}
+
+th {
+    /* Table header styles */
+    background-color: #f2f2f2;
+}
+
+#flex-container {
+    /* Flexbox container styles */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+/* Common styles for input fields and buttons */
+.input-common {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 8px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Placeholder styles for input elements */
+.input-common::placeholder {
+    color: #808080;
+    font-style: italic;
+}
+
+/* Applying common styles to #input-field */
+#input-field {
+    flex: 1;
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+/* Specific styles for #percentage-input */
+#percentage-input {
+    width: 100px;
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Styles for #start-button */
+#start-button {
+    width: 100px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#clear-container {
+    /* Flexbox container for clear button */
+    height: 0; /* Установить высоту элемента равной 0 */
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+#clear-button {
+    /* Clear button styles */
+    display: none;
+    width: 50%;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin: auto
+}
